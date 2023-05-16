@@ -116,6 +116,7 @@ header #nav-icon.nav-icon-open span:nth-child(3) {
 }
 #header-menu-mobile ul {
   padding-top: 60px;
+  list-style: none;
 }
 #header-menu-mobile ul li {
   margin-top: 10px;
