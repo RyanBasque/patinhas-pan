@@ -35,6 +35,7 @@ header {
       width: auto;
       height: auto;
       max-width: 60px;
+      width: 40px;
 
       object-fit: scale-down;
     }
@@ -66,7 +67,7 @@ header {
   }
 
   #nav-icon {
-    width: 60px;
+    width: 30px;
     height: 45px;
 
     position: relative;
@@ -175,7 +176,6 @@ header {
 
   ul {
     list-style: none;
-
     display: flex;
 
     li {
@@ -198,6 +198,7 @@ header {
           background-color: #8c52ff;
           transform: scaleX(0);
           transition: transform 0.3s ease-in-out;
+          border-radius: 5px;
         }
 
         &:hover::before {
@@ -218,4 +219,37 @@ main {
   height: auto;
 
   margin: 0 auto;
+}
+
+#principal-info-container {
+  margin-top: 35px;
+
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+
+  position: relative;
+
+  img {
+    position: absolute;
+    border-radius: 100%;
+  }
+}
+
+.principal-dog {
+  left: -60px;
+  width: 50%;
+}
+
+.cat {
+  left: 50px;
+  top: -30px;
+
+  width: 25%;
+}
+
+.hat-dog {
+  top: 140px;
+  left: 20px;
+
+  width: 22%;
 }

@@ -30,6 +30,7 @@ header figure img {
   width: auto;
   height: auto;
   max-width: 60px;
+  width: 40px;
   -o-object-fit: scale-down;
      object-fit: scale-down;
 }
@@ -54,7 +55,7 @@ header button:active {
   }
 }
 header #nav-icon {
-  width: 60px;
+  width: 30px;
   height: 45px;
   position: relative;
   transform: rotate(0deg);
@@ -155,6 +156,7 @@ header #nav-icon.nav-icon-open span:nth-child(3) {
   background-color: #8c52ff;
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
+  border-radius: 5px;
 }
 #header-menu-desktop ul li a:hover::before {
   transform: scaleX(1);
@@ -170,4 +172,32 @@ main {
   max-width: 1200px;
   height: auto;
   margin: 0 auto;
+}
+
+#principal-info-container {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  position: relative;
+}
+#principal-info-container img {
+  position: absolute;
+  border-radius: 100%;
+}
+
+.principal-dog {
+  left: -60px;
+  width: 50%;
+}
+
+.cat {
+  left: 50px;
+  top: -30px;
+  width: 25%;
+}
+
+.hat-dog {
+  top: 140px;
+  left: 20px;
+  width: 22%;
 }/*# sourceMappingURL=styles.css.map */
