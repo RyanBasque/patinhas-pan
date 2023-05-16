@@ -5,28 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patinhas Pan</title>
-    <link rel="stylesheet" href="./src/styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
   </head>
   <body>
     <header>
       <figure>
         <img src="./src/assets/images/logo.svg" alt="Logo da Patinhas Pan" />
       </figure>
-      <button id="menu-btn">
+      <button id="menu-btn-mobile">
         <div id="nav-icon">
           <span></span>
           <span></span>
           <span></span>
         </div>
       </button>
+      <nav id="header-menu-desktop">
+        <ul>
+          <li>
+            <a>Por que nos escolher</a>
+          </li>
+          <li>
+            <a>Sobre nós</a>
+          </li>
+          <li>
+            <a>Onde estamos</a>
+          </li>
+          <li>
+            <a>Contatos</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <div id="header-menu">
+    <nav id="header-menu-mobile">
       <ul>
         <li>
           <a>Por que nos escolher</a>
@@ -41,7 +57,7 @@
           <a>Contatos</a>
         </li>
       </ul>
-    </div>
+    </nav>
     <main></main>
   </body>
 </html>

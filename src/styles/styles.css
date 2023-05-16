@@ -23,7 +23,10 @@ header {
   padding: 5px 16px;
   position: relative;
 }
-header img {
+header figure {
+  z-index: 3;
+}
+header figure img {
   width: auto;
   height: auto;
   max-width: 60px;
@@ -95,7 +98,7 @@ header #nav-icon.nav-icon-open span:nth-child(3) {
   background-color: #fbfbfb;
 }
 
-#header-menu {
+#header-menu-mobile {
   position: absolute;
   top: 0;
   z-index: 2;
@@ -107,17 +110,59 @@ header #nav-icon.nav-icon-open span:nth-child(3) {
   transition: height 0.25s ease-in-out;
   color: #fbfbfb;
   font-size: 20px;
+  font-weight: 400;
   text-align: center;
 }
-#header-menu ul {
+#header-menu-mobile ul {
   padding-top: 60px;
 }
-#header-menu ul li {
+#header-menu-mobile ul li {
   margin-top: 10px;
 }
+#header-menu-mobile ul li:first-child {
+  margin: 0;
+}
 
-#header-menu.header-menu-open {
+#header-menu-mobile.header-menu-open {
   height: 220px;
+}
+
+#header-menu-desktop {
+  position: absolute;
+  top: 22px;
+  right: 16px;
+}
+#header-menu-desktop ul {
+  list-style: none;
+  display: flex;
+}
+#header-menu-desktop ul li {
+  margin-left: 15px;
+  font-size: 20px;
+}
+#header-menu-desktop ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+#header-menu-desktop ul li a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 3px;
+  background-color: #8c52ff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+#header-menu-desktop ul li a:hover::before {
+  transform: scaleX(1);
+}
+@media (max-width: 600px) {
+  #header-menu-desktop {
+    display: none;
+  }
 }
 
 main {

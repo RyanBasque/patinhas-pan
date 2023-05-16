@@ -28,12 +28,16 @@ header {
 
   position: relative;
 
-  img {
-    width: auto;
-    height: auto;
-    max-width: 60px;
+  figure {
+    z-index: 3;
 
-    object-fit: scale-down;
+    img {
+      width: auto;
+      height: auto;
+      max-width: 60px;
+
+      object-fit: scale-down;
+    }
   }
 
   button {
@@ -125,7 +129,7 @@ header {
   }
 }
 
-#header-menu {
+#header-menu-mobile {
   position: absolute;
   top: 0;
 
@@ -144,6 +148,7 @@ header {
 
   color: #fbfbfb;
   font-size: 20px;
+  font-weight: 400;
   text-align: center;
 
   ul {
@@ -151,12 +156,60 @@ header {
 
     li {
       margin-top: 10px;
+
+      &:first-child {
+        margin: 0;
+      }
     }
   }
 }
 
-#header-menu.header-menu-open {
+#header-menu-mobile.header-menu-open {
   height: 220px;
+}
+
+#header-menu-desktop {
+  position: absolute;
+  top: 22px;
+  right: 16px;
+
+  ul {
+    list-style: none;
+
+    display: flex;
+
+    li {
+      margin-left: 15px;
+      font-size: 20px;
+
+      a {
+        cursor: pointer;
+        text-decoration: none;
+
+        position: relative;
+        transition: color 0.3s ease-in-out;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 100%;
+          width: 100%;
+          height: 3px;
+          background-color: #8c52ff;
+          transform: scaleX(0);
+          transition: transform 0.3s ease-in-out;
+        }
+
+        &:hover::before {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 main {
