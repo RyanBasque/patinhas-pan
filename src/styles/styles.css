@@ -236,7 +236,7 @@ main {
     font-size: 25px;
   }
 }
-@media (min-width: 120px) {
+@media (min-width: 1200px) {
   .sub-info-container h1 {
     font-size: 28px;
   }
@@ -246,56 +246,25 @@ main {
 }
 .sub-info-container .checkbox-wrapper {
   margin-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
-@media (min-width: 600px) {
-  .sub-info-container .checkbox-wrapper {
-    gap: 20px;
-  }
-}
-.sub-info-container .checkbox {
+.sub-info-container .checkbox-wrapper ul {
   display: flex;
-  align-items: center;
-  width: 100%;
-  margin-top: 10px;
-}
-@media (max-width: 600px) {
-  .sub-info-container .checkbox:nth-child(even) {
-    justify-content: flex-end;
-  }
-  .sub-info-container .checkbox:nth-child(2) {
-    padding-right: 30px;
-  }
-}
-.sub-info-container .checkbox img {
-  width: 15px;
-  height: 15px;
-}
-.sub-info-container .checkbox p {
-  margin-left: 5px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
   font-size: 13px;
-  font-weight: 500;
 }
-@media (min-width: 600px) {
-  .sub-info-container .checkbox p {
-    font-size: 17px;
-  }
+.sub-info-container .checkbox-wrapper ul div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-@media (min-width: 800px) {
-  .sub-info-container .checkbox p {
-    font-size: 19px;
-  }
-}
-@media (min-width: 1200px) {
-  .sub-info-container .checkbox p {
-    font-size: 22px;
-  }
-}
-@media (min-width: 600px) {
-  .sub-info-container .checkbox {
-    margin-top: 20px;
-  }
+.sub-info-container .checkbox-wrapper ul li {
+  list-style: none;
+  background-image: url("../assets/icons/check.svg");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  padding-left: 20px;
+  margin-left: -15px;
 }
 
 #choose-us-container {

@@ -289,7 +289,7 @@ main {
       font-size: 25px;
     }
 
-    @media (min-width: 120px) {
+    @media (min-width: 1200px) {
       font-size: 28px;
     }
 
@@ -301,58 +301,28 @@ main {
   .checkbox-wrapper {
     margin-top: 30px;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    ul {
+      display: flex;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 40px;
 
-    @media (min-width: 600px) {
-      gap: 20px;
-    }
-  }
+      font-size: 13px;
 
-  .checkbox {
-    display: flex;
-    align-items: center;
-
-    width: 100%;
-
-    margin-top: 10px;
-
-    @media (max-width: 600px) {
-      &:nth-child(even) {
+      div {
+        display: flex;
+        flex-direction: column;
         justify-content: flex-end;
       }
 
-      &:nth-child(2) {
-        padding-right: 30px;
+      li {
+        list-style: none;
+        background-image: url("../assets/icons/check.svg");
+        background-repeat: no-repeat;
+        background-size: 15px;
+
+        padding-left: 20px;
+        margin-left: -15px;
       }
-    }
-
-    img {
-      width: 15px;
-      height: 15px;
-    }
-
-    p {
-      margin-left: 5px;
-
-      font-size: 13px;
-      font-weight: 500;
-
-      @media (min-width: 600px) {
-        font-size: 17px;
-      }
-
-      @media (min-width: 800px) {
-        font-size: 19px;
-      }
-
-      @media (min-width: 1200px) {
-        font-size: 22px;
-      }
-    }
-
-    @media (min-width: 600px) {
-      margin-top: 20px;
     }
   }
 }
