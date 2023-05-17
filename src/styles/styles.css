@@ -281,7 +281,9 @@ main {
   .sub-info-container .checkbox-wrapper ul {
     margin-top: 40px;
     font-size: 28px;
-    gap: 30px 40px;
+  }
+  .sub-info-container .checkbox-wrapper ul li {
+    margin: 10px;
   }
 }
 

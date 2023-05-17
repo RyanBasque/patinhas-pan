@@ -336,7 +336,9 @@ main {
       @media (min-width: 1200px) {
         margin-top: 40px;
         font-size: 28px;
-        gap: 30px 40px;
+        li {
+          margin: 10px;
+        }
       }
     }
   }
