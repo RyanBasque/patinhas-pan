@@ -181,28 +181,28 @@ main {
 }
 
 #principal-info-container {
-  margin-top: 35px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  gap: 15px;
   position: relative;
+  overflow: visible;
 }
 #principal-info-container img {
   position: relative;
 }
 
-.principal-dog {
-  width: 75%;
-  max-width: 100px;
-}
-@media (min-width: 600px) {
-  .principal-dog {
-    max-width: 150px;
-  }
+.pets-image {
+  background-image: url("../assets/images/Group 37.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: local;
+  padding-top: 10px;
+  margin-top: -10px;
+  margin-left: -30px;
 }
 
-.sub-info-container {
-  margin: 0 20px;
-}
 .sub-info-container h1 {
   font-size: 18px;
   font-weight: 500;
@@ -219,7 +219,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .sub-info-container .checkbox {
   display: flex;
@@ -236,7 +236,7 @@ main {
 }
 .sub-info-container .checkbox p {
   margin-left: 5px;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 500;
 }
 @media (min-width: 600px) {
