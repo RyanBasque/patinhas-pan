@@ -231,6 +231,11 @@ main {
   text-align: center;
   display: block;
 }
+@media (min-width: 450px) {
+  .sub-info-container h1 {
+    font-size: 22px;
+  }
+}
 @media (min-width: 600px) {
   .sub-info-container h1 {
     font-size: 25px;
