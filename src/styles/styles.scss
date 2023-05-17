@@ -37,6 +37,10 @@ header {
       max-width: 60px;
       width: 40px;
 
+      @media (min-width: 600px) {
+        width: 80px;
+      }
+
       object-fit: scale-down;
     }
   }
@@ -118,7 +122,7 @@ header {
 
   #nav-icon.nav-icon-open span:nth-child(2) {
     opacity: 0;
-    left: -60px;
+    left: -30px;
 
     background-color: #fbfbfb;
   }
@@ -181,7 +185,7 @@ header {
 
     li {
       margin-left: 15px;
-      font-size: 20px;
+      font-size: 18px;
 
       a {
         cursor: pointer;
@@ -226,31 +230,112 @@ main {
   margin-top: 35px;
 
   display: grid;
-  grid-template-columns: 0.5fr 2fr;
+  grid-template-columns: 1fr 2fr;
 
   position: relative;
 
   img {
-    position: absolute;
-    border-radius: 100%;
+    position: relative;
   }
 }
 
 .principal-dog {
-  left: -60px;
-  width: 50%;
+  width: 75%;
+  max-width: 100px;
+
+  @media (min-width: 600px) {
+    max-width: 150px;
+  }
 }
 
-.cat {
-  left: 50px;
-  top: -30px;
+.sub-info-container {
+  margin: 0 20px;
+  h1 {
+    font-size: 18px;
+    font-weight: 500;
 
-  width: 25%;
+    @media (min-width: 600px) {
+      font-size: 25px;
+    }
+
+    strong {
+      color: #8c52ff;
+    }
+  }
+
+  .checkbox-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    margin-top: 40px;
+  }
+
+  .checkbox {
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 600px) {
+      margin-top: 20px;
+    }
+
+    img {
+      width: 15px;
+      height: 15px;
+    }
+
+    p {
+      margin-left: 5px;
+
+      font-size: 9px;
+      font-weight: 500;
+
+      @media (min-width: 600px) {
+        font-size: 15px;
+      }
+
+      @media (min-width: 800px) {
+        font-size: 19px;
+      }
+    }
+  }
 }
 
-.hat-dog {
-  top: 140px;
-  left: 20px;
+#choose-us-container {
+  display: flex;
+  justify-content: center;
+}
 
-  width: 22%;
+.title {
+  font-size: 16px;
+  font-weight: 500;
+
+  position: relative;
+
+  margin-top: 20px;
+
+  @media (min-width: 600px) {
+    font-size: 24px;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: calc(50%);
+
+    width: 40px;
+    height: 2px;
+
+    margin: 0 10px;
+
+    border-radius: 5px;
+
+    background-color: #8c52ff;
+  }
+
+  &::before {
+    left: calc(-50%);
+  }
 }
