@@ -290,7 +290,7 @@ main {
     }
 
     @media (min-width: 1200px) {
-      font-size: 28px;
+      font-size: 35px;
     }
 
     strong {
@@ -306,7 +306,7 @@ main {
       grid-template-columns: 1fr 1fr;
       gap: 20px 40px;
 
-      font-size: 13px;
+      font-size: 16px;
 
       div {
         display: flex;
@@ -318,10 +318,21 @@ main {
         list-style: none;
         background-image: url("../assets/icons/check.svg");
         background-repeat: no-repeat;
+        background-position: left center;
         background-size: 15px;
 
         padding-left: 20px;
         margin-left: -15px;
+      }
+
+      @media (min-width: 600px) {
+        font-size: 22px;
+      }
+
+      @media (min-width: 1200px) {
+        margin-top: 40px;
+        font-size: 28px;
+        gap: 30px 40px;
       }
     }
   }

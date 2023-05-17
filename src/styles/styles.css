@@ -238,7 +238,7 @@ main {
 }
 @media (min-width: 1200px) {
   .sub-info-container h1 {
-    font-size: 28px;
+    font-size: 35px;
   }
 }
 .sub-info-container h1 strong {
@@ -251,7 +251,7 @@ main {
   display: flex;
   grid-template-columns: 1fr 1fr;
   gap: 20px 40px;
-  font-size: 13px;
+  font-size: 16px;
 }
 .sub-info-container .checkbox-wrapper ul div {
   display: flex;
@@ -262,9 +262,22 @@ main {
   list-style: none;
   background-image: url("../assets/icons/check.svg");
   background-repeat: no-repeat;
+  background-position: left center;
   background-size: 15px;
   padding-left: 20px;
   margin-left: -15px;
+}
+@media (min-width: 600px) {
+  .sub-info-container .checkbox-wrapper ul {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1200px) {
+  .sub-info-container .checkbox-wrapper ul {
+    margin-top: 40px;
+    font-size: 28px;
+    gap: 30px 40px;
+  }
 }
 
 #choose-us-container {
