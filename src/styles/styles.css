@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  max-width: 1200px;
+  max-width: 1600px;
   height: 70px;
   margin: 0 auto;
   padding: 5px 16px;
@@ -175,59 +175,97 @@ header #nav-icon.nav-icon-open span:nth-child(3) {
 
 main {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   height: auto;
   margin: 0 auto;
 }
 
 #principal-info-container {
-  margin-top: 30px;
+  margin: 30px 0;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
   gap: 15px;
-  position: relative;
-  overflow: visible;
 }
-#principal-info-container img {
-  position: relative;
+@media (min-width: 600px) {
+  #principal-info-container {
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 .pets-image {
-  background-image: url("../assets/images/Group 37.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  background-attachment: local;
-  padding-top: 10px;
-  margin-top: -10px;
-  margin-left: -30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: none;
+  margin-left: 16px;
+}
+.pets-image img {
+  max-width: 350px;
+  max-height: 100%;
+}
+@media (min-width: 600px) {
+  .pets-image {
+    font-size: 25px;
+    display: flex;
+  }
+  .pets-image img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
+.sub-info-container {
+  margin: 0 16px 0 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .sub-info-container h1 {
   font-size: 18px;
   font-weight: 500;
+  text-align: center;
+  display: block;
 }
 @media (min-width: 600px) {
   .sub-info-container h1 {
     font-size: 25px;
   }
 }
+@media (min-width: 120px) {
+  .sub-info-container h1 {
+    font-size: 28px;
+  }
+}
 .sub-info-container h1 strong {
   color: #8c52ff;
 }
 .sub-info-container .checkbox-wrapper {
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 30px;
+}
+@media (min-width: 600px) {
+  .sub-info-container .checkbox-wrapper {
+    gap: 20px;
+  }
 }
 .sub-info-container .checkbox {
   display: flex;
   align-items: center;
+  width: 100%;
+  margin-top: 10px;
 }
-@media (min-width: 600px) {
-  .sub-info-container .checkbox {
-    margin-top: 20px;
+@media (max-width: 600px) {
+  .sub-info-container .checkbox:nth-child(even) {
+    justify-content: flex-end;
+  }
+  .sub-info-container .checkbox:nth-child(2) {
+    padding-right: 30px;
   }
 }
 .sub-info-container .checkbox img {
@@ -247,6 +285,16 @@ main {
 @media (min-width: 800px) {
   .sub-info-container .checkbox p {
     font-size: 19px;
+  }
+}
+@media (min-width: 120px) {
+  .sub-info-container .checkbox p {
+    font-size: 22px;
+  }
+}
+@media (min-width: 600px) {
+  .sub-info-container .checkbox {
+    margin-top: 20px;
   }
 }
 
