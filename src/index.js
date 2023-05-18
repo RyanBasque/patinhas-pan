@@ -43,29 +43,29 @@ next.addEventListener("click", () => {
   track.style.transform = "translateX(" + 2 * -width + "px)";
 });
 
-// (() => {
-//   let index = 0;
+(() => {
+  let index = 0;
 
-//   const setInterval(() => {
-//     console.log(index);
-//     if (index == 2) {
-//       index = -1;
-//     }
+  setInterval(() => {
+    console.log(index);
+    if (index == 2) {
+      index = -1;
+    }
 
-//     index++;
+    index++;
 
-//     if (index === 1) {
-//       prev.classList.remove("show");
-//       atual.classList.add("show");
-//       next.classList.remove("show");
-//     }
+    if (index === 1) {
+      prev.classList.remove("show");
+      atual.classList.add("show");
+      next.classList.remove("show");
+    }
 
-//     if (index === 2) {
-//       prev.classList.remove("show");
-//       atual.classList.remove("show");
-//       next.classList.add("show");
-//     }
+    if (index === 2) {
+      prev.classList.remove("show");
+      atual.classList.remove("show");
+      next.classList.add("show");
+    }
 
-//     track.style.transform = "translateX(" + index * -width + "px)";
-//   }, 3500);
-// })();
+    track.style.transform = "translateX(" + index * -width + "px)";
+  }, 3500);
+})();
