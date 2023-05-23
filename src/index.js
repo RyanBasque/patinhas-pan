@@ -70,7 +70,7 @@ const infiniteScroll = () => {
   // If the carousel is at the beginning, scroll to the end
   if (carousel.scrollLeft === 0) {
     carousel.classList.add("no-transition");
-    carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
+    carousel.scrollLeft = carousel.scrollWidth * carousel.offsetWidth;
     carousel.classList.remove("no-transition");
   }
   // If the carousel is at the end, scroll to the beginning
@@ -89,10 +89,11 @@ const infiniteScroll = () => {
 };
 
 const autoPlay = () => {
-  if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+  if (window.innerWidth > 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
   // Autoplay the carousel after every 2500 ms
   timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 2500);
 };
+
 autoPlay();
 
 carousel.addEventListener("mousedown", dragStart);
