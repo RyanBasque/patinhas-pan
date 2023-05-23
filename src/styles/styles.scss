@@ -657,4 +657,73 @@ main {
 }
 
 .about-us-card-container {
+  width: 100%;
+  max-width: 1000px;
+  height: 400px;
+
+  display: flex;
+
+  @media (min-width: 600px) {
+    height: 120px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 150px;
+  }
+
+  flex-shrink: 0;
+
+  padding: 0 16px;
+}
+
+.about-us-card {
+  width: 65%;
+  height: 100%;
+
+  margin: 0 auto;
+
+  border-radius: 10px;
+
+  background-color: #ffffff;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 100%;
+
+    border-radius: 10px 10px 0 0;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 13px;
+    text-align: center;
+    color: #8c52ff;
+
+    margin-top: 10px;
+  }
+
+  .paw-icon {
+    margin: 15px 0;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  p {
+    padding: 0 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #000000;
+  }
 }

@@ -561,4 +561,63 @@ main {
 #about-us > p strong {
   font-weight: 400;
   color: #8c52ff;
+}
+
+.about-us-card-container {
+  width: 100%;
+  max-width: 1000px;
+  height: 400px;
+  display: flex;
+  flex-shrink: 0;
+  padding: 0 16px;
+}
+@media (min-width: 600px) {
+  .about-us-card-container {
+    height: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-us-card-container {
+    height: 150px;
+  }
+}
+
+.about-us-card {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-us-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.about-us-card h2 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 13px;
+  text-align: center;
+  color: #8c52ff;
+  margin-top: 10px;
+}
+.about-us-card .paw-icon {
+  margin: 15px 0;
+}
+.about-us-card .paw-icon img {
+  width: 20px;
+  height: 20px;
+}
+.about-us-card p {
+  padding: 0 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
 }/*# sourceMappingURL=styles.css.map */

@@ -47,7 +47,6 @@ next.addEventListener("click", () => {
   let index = 0;
 
   setInterval(() => {
-    console.log(index);
     if (index == 2) {
       index = -1;
     }
