@@ -75,7 +75,6 @@ const aboutUsInfiniteScroll = () => {
 };
 
 const aboutUsAboutUsTimeoutId = () => {
-  if (window.innerWidth > 800 || !aboutUsIsAutoPlay) return;
   aboutUsTimeoutId = setTimeout(
     () => (aboutUscarousel.scrollLeft += aboutUsfirstCardWidth),
     2500
@@ -83,8 +82,10 @@ const aboutUsAboutUsTimeoutId = () => {
 };
 
 const aboutUsAutoPlay = () => {
-  if (window.innerWidth > 800 || !isAutoPlay) return;
-  timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 2500);
+  aboutUsTimeoutId = setTimeout(
+    () => (aboutUscarousel.scrollLeft += aboutUsfirstCardWidth),
+    2500
+  );
 };
 
 aboutUsAutoPlay();
