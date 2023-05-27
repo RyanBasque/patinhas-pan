@@ -199,7 +199,7 @@ header {
 }
 
 #header-menu-mobile.header-menu-open {
-  height: 220px;
+  height: 250px;
 }
 
 #header-menu-desktop {
@@ -984,10 +984,17 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 
+    width: 90%;
     max-height: 130px;
     overflow: hidden;
 
     transition: max-height 0.25s ease-in-out;
+
+    @media (min-width: 900px) {
+      grid-template-columns: repeat(4, 1fr);
+
+      max-height: 200px;
+    }
 
     .galery-card {
       display: flex;
@@ -1006,6 +1013,11 @@ footer {
         object-fit: cover;
 
         border: 2px solid #8b53ff;
+
+        @media (min-width: 900px) {
+          width: 150px;
+          height: 150px;
+        }
       }
 
       h3 {
@@ -1014,6 +1026,10 @@ footer {
 
         margin: 5px 0;
 
+        @media (min-width: 900px) {
+          font-size: 18px;
+
+        }
       }
     }
   }
@@ -1021,4 +1037,9 @@ footer {
 
 .galery-container-open {
   max-height: 500px !important;
+
+  @media (min-width: 900px) {
+
+    max-height: 1000px !important;
+  }
 }
