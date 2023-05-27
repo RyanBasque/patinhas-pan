@@ -578,7 +578,7 @@ main {
 }
 .about-us-card h2 {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 13px;
   text-align: center;
   color: #8c52ff;
@@ -588,15 +588,15 @@ main {
   margin: 15px 0;
 }
 .about-us-card .paw-icon img {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 .about-us-card p {
   padding: 0 20px;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 18px;
   text-align: center;
   color: #000000;
 }
@@ -759,4 +759,94 @@ footer p {
     width: 90px;
     height: 90px;
   }
+}
+
+#galery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#galery > p {
+  margin: 30px 30px 0 30px;
+  max-width: 1000px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  #galery > p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 800px) {
+  #galery > p {
+    font-size: 24px;
+  }
+}
+#galery > p strong {
+  font-weight: 400;
+  color: #8c52ff;
+}
+#galery .galery-header {
+  width: 100%;
+  margin-top: 30px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#galery .galery-header .title {
+  margin-top: 0;
+}
+#galery .galery-header .arrow-button {
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background-color: transparent;
+}
+#galery .galery-header .arrow-button input {
+  display: none;
+}
+#galery .galery-header .arrow-button input:checked + label > img {
+  transform: rotate(180deg);
+}
+#galery .galery-header .arrow-button img {
+  transition: 0.25s ease-in-out;
+  width: 20px;
+  height: 20px;
+}
+#galery .galery-container {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-height: 130px;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in-out;
+}
+#galery .galery-container .galery-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+}
+#galery .galery-container .galery-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #8b53ff;
+}
+#galery .galery-container .galery-card h3 {
+  font-weight: 500;
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.galery-container-open {
+  max-height: 500px !important;
 }/*# sourceMappingURL=styles.css.map */
