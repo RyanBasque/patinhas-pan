@@ -384,7 +384,7 @@ main {
   align-items: center;
   flex-direction: column;
 
-  >p {
+  > p {
     margin: 30px 30px 0 30px;
 
     max-width: 1000px;
@@ -617,7 +617,6 @@ main {
 }
 
 @media screen and (max-width: 900px) {
-
   .wrapper .carousel,
   .about-us-wrapper .about-us-carousel {
     grid-auto-columns: calc((100% / 2) - 9px);
@@ -625,7 +624,6 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-
   .wrapper .carousel,
   .about-us-wrapper .about-us-carousel {
     grid-auto-columns: 100%;
@@ -638,7 +636,7 @@ main {
   align-items: center;
   flex-direction: column;
 
-  >p {
+  > p {
     margin: 30px 30px 0 30px;
 
     max-width: 1000px;
@@ -744,7 +742,7 @@ main {
 
   margin-bottom: 30px;
 
-  >p {
+  > p {
     margin: 30px 30px 0 30px;
 
     max-width: 1000px;
@@ -789,7 +787,7 @@ main {
 
   margin-bottom: 30px;
 
-  >p {
+  > p {
     margin: 30px 30px 0 30px;
 
     max-width: 1000px;
@@ -905,14 +903,13 @@ footer {
   }
 }
 
-
 #galery {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
-  >p {
+  > p {
     margin: 30px 30px 0 30px;
 
     max-width: 1000px;
@@ -962,8 +959,7 @@ footer {
       input {
         display: none;
 
-        &:checked+label>img {
-
+        &:checked + label > img {
           transform: rotate(180deg);
         }
       }
@@ -985,6 +981,7 @@ footer {
     gap: 1rem;
 
     width: 90%;
+    max-width: 1200px;
     max-height: 130px;
     overflow: hidden;
 
@@ -1028,7 +1025,6 @@ footer {
 
         @media (min-width: 900px) {
           font-size: 18px;
-
         }
       }
     }
@@ -1039,7 +1035,6 @@ footer {
   max-height: 500px !important;
 
   @media (min-width: 900px) {
-
     max-height: 1000px !important;
   }
 }
